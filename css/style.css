@@ -5,9 +5,10 @@
 }
 /* Formatação da tela*/
 .game-tela{
-	width: 80%;
+	width: 100%;
 	height: 500px;
-	border: 2px solid black;
+	border-bottom: 20px solid rgba(33, 200, 14, 1);
+	background: linear-gradient(#0000FF, #B0E0E6);
 	margin: 0 auto;
 	position: relative;
 	overflow: hidden;
@@ -17,15 +18,42 @@
 	position: absolute;
 	bottom: 5px;
 	width: 100px;
-	animation: badnik-animacao 2s infinite linear;
+	animation: badnik-animacao 1.5s infinite linear;
 }
 
 .sonic{
 	position: absolute;
 	width: 150px;
 	bottom: -30px;
-	background-color: red;
-	
+}
+
+.coqueiro{
+	position: absolute;
+	bottom: 0;
+	left: 500px;
+	width: 130px;
+}
+
+.coqueiro2{
+	position: absolute;
+	bottom: 0;
+	left: 900px;
+	width: 140px;
+}
+
+.flor{
+	position: absolute;
+	bottom: 0;
+	left: 850px;
+	width: 70px;
+}
+
+
+.nuvem{
+	position: absolute;
+	bottom: 290px;
+	width: 700px;
+	animation: nuvem-animation 30s infinite ease-out;
 }
 
 .jump{
@@ -56,6 +84,16 @@
 	}
 	100%{
 		bottom: -30px;
+	}
+}
+
+/* Formatação da animação classe nuvem*/
+@keyframes nuvem-animation{
+		from{
+		right: -500px;
+	}
+	to{
+		right: 100%;
 	}
 }
 
