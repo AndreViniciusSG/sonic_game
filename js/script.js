@@ -14,7 +14,7 @@ const badnik = document.querySelector('.badnik');
 		const badnikPosition = badnik.offsetLeft;
 		const sonicPosition = +window.getComputedStyle(sonic).bottom.replace('px', '');
 		
-		if(badnikPosition <=90 && badnikPosition > 0 && sonicPosition <70){
+		if(badnikPosition <=90 && badnikPosition > 0 && sonicPosition <80){
 			
 			badnik.style.animation = 'none';
 			badnik.style.left = `${badnikPosition}px`;
