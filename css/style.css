@@ -17,7 +17,7 @@
 .badnik{
 	position: absolute;
 	bottom: 5px;
-	width: 100px;
+	width: 170px;
 	animation: badnik-animacao 1.5s infinite linear;
 }
 
