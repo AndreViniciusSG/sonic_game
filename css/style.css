@@ -23,8 +23,9 @@
 
 .sound{
 	position: absolute;
-	left: 1000px;
+	left: 400px;
 	opacity: 0.2;
+	top: 10px;
 }
 .chao{
 	position: absolute;
@@ -33,74 +34,76 @@
 	width: 100%;
 	height: 25px;
 }
-.sol{
-	position: absolute;
-	bottom: 250px;
-	left: 0;
-	width: 400px;
-}
+
 .sonic{
 	position: absolute;
 	width: 150px;
 	bottom: -15px;
 }
 
-.tails{
+.icon#sol{
+	position: absolute;
+	bottom: 250px;
+	left: 0;
+	width: 400px;
+}
+.icon#tails{
 	position: absolute;
 	bottom: 25px;
 	left: 750px;
 	width: 80px;
+	animation: icon-animation 10s infinite;
 }
 
-.knu{
+.icon#knu{
 	position: absolute;
 	bottom: 12px;
 	left: 1100px;
 	width: 105px;
 }
 
-.amy{
+.icon#amy{
 	position: absolute;
 	bottom: 25px;
 	left: 615px;
 	width: 75px;
 }
-.coqueiro{
+.icon#coqueiro{
 	position: absolute;
 	bottom: 0;
 	left: 500px;
 	width: 130px;
 }
 
-.coqueiro2{
+.icon#coqueiro2{
 	position: absolute;
 	bottom: 0;
 	left: 900px;
 	width: 140px;
 }
 
-.coqueiro3{
+.icon#coqueiro3{
 	position: absolute;
 	bottom: 0;
 	left: 1200px;
 	width: 150px;
 }
 
-.flor{
+.icon#flor{
 	position: absolute;
 	bottom: 25px;
 	left: 850px;
 	width: 50px;
 }
 
-.flor2{
+.icon#flor2{
 	position: absolute;
 	bottom: 25px;
 	left: 470px;
 	width: 40px;
 }
 
-.flor3{
+.icon#flor3{
 	position: absolute;
 	bottom: 25px;
 	left: 1050px;
@@ -155,3 +158,12 @@
 	}
 }
 
+/* Formatação da animação dos icon*/
+@keyframes icon-animation{
+		from{
+		right: -80px;
+	}
+	to{
+		right: 100%;
+	}
+}

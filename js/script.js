@@ -28,6 +28,6 @@ const badnik = document.querySelector('.badnik');
 			clearInterval(loop);
 			
 		}
-	}, 10);
+	} , 10);
 	alert("O Jogo será iniciado");
 	document.addEventListener('keydown', jump);
